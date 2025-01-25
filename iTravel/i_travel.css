@@ -12,7 +12,7 @@ body {
 
 body::before {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -56,6 +56,126 @@ main p {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     max-width: 30%;
     text-align: left;
+}
+
+main.about-us p {
+    max-width: 100%;
+    text-align: left;
+    margin-top: 20px;
+    padding-top: 0 5%;
+    padding-left: 0 5%;
+}
+
+#team {
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+#team h3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin: 0;
+    white-space: nowrap;
+}
+
+#team h3 span {
+    display: block;
+    text-align: left;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    flex: 1;
+}
+
+.team-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.team-card h4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.team-card h5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ddd;
+}
+
+.team-card p {
+    font-size: 18px;
+    color: #ddd;
+}
+
+.travel p {
+    max-width: 100%;
+    color: #ddd;
+}
+
+#contact-form {
+    width: 70%;
+    padding: 20px 10%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#contact-form label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 95%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+    color: #ccc;
+}
+
+#contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #007b7f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #005f5f;
 }
 
 header {
@@ -166,7 +286,7 @@ button:hover {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
     z-index: 2;
